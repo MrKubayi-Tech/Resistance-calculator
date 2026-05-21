@@ -1,0 +1,243 @@
+body, #displayer, .display_container, #colors, #tolerance #forth_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 100vw;
+    font-family: 'Lucida Sans';
+    background-color: hsl(0, 0%, 80%);
+}
+
+section{
+    margin: 30px 0;
+    width: 40%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+
+}
+
+#topic_container, #calculation_container{
+    text-align: center;
+}
+
+#displayer{
+    width: 100%;
+}
+
+#resistor_calc{
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 0%, 20%);
+    height: 30px;
+
+}
+
+.label_h4{
+    margin-left: 10px;
+}
+
+#first_value, #second_value, #third_value{
+    margin-right: 10px;
+}
+
+#first_div, #second_div, #third_div{
+    text-align: center;
+}
+
+h4{
+    font-size: 12px;
+}
+
+#colors,  #tolerance #forth_div{
+    justify-content: space-between;
+}
+
+button{
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#black, #black1, #black2, #brown, #brown1, #brown2, #brown3, #red, #red1, #red2, #red3,#green, #green1, #green2,#yellow, #yellow1, #yellow2,#orange, #orange1, #orange2,#blue, #blue1, #blue2,#violet, #violet1, #violet2,#gray, #gray1, #gray2,#gold{
+    transition-duration: 0.5s;
+    color: white;
+}
+
+#black, #black1, #black2{
+    background-color: hsl(0, 0%, 0%);
+}
+
+#black:hover, #black1:hover, #black2:hover{
+    background-color: hsl(0, 0%, 20%);
+}
+
+#black:active, #black1:active, #black2:active{
+    background-color: hsl(0, 0%, 40%);
+}
+
+#brown, #brown1, #brown2, #brown3{
+    background-color: hsl(0, 59%, 41%);
+}
+
+#brown:hover, #brown1:hover, #brown2:hover, #brown3:hover{
+    background-color: hsl(0, 59%, 51%);
+}
+
+#brown:active, #brown1:active, #brown2:active, #brown3:active{
+    background-color: hsl(0, 59%, 61%);
+}
+
+#red, #red1, #red2, #red3{
+    background-color: hsl(0, 100%, 50%);
+}
+
+#red:hover, #red1:hover, #red2:hover, #red3:hover{
+    background-color: hsl(0, 100%, 65%);
+}
+
+#red:active, #red1:active, #red2:active, #red3:active{
+    background-color: hsl(0, 100%, 80%);
+}
+
+#orange, #orange1, #orange2{
+    background-color: hsl(39, 100%, 50%);
+}
+
+#orange:hover, #orange1:hover, #orange2:hover{
+    background-color: hsl(39, 100%, 65%);
+}
+
+#orange:active, #orange1:active, #orange2:active{
+    background-color: hsl(39, 100%, 80%);
+}
+
+#yellow, #yellow1, #yellow2{
+    background-color: hsl(60, 100%, 50%);
+}
+
+#yellow:hover, #yellow1:hover, #yellow2:hover{
+    background-color: hsl(60, 100%, 35%);
+}
+
+#yellow:active, #yellow1:active, #yellow2:active{
+    background-color: hsl(60, 100%, 80%);
+}
+
+#green, #green1, #green2{
+    background-color: green;
+}
+
+#green:hover, #green1:hover, #green2:hover{
+    background-color: hsl(120, 100%, 40%);
+}
+
+#green:active, #green1:active, #green2:active{
+    background-color: hsl(120, 100%, 60%);
+}
+
+#blue, #blue1, #blue2{
+    background-color: blue;
+}
+
+#blue:hover, #blue1:hover, #blue2:hover{
+    background-color: hsl(240, 100%, 60%);
+}
+
+#blue:active, #blue1:active, #blue2:active{
+    background-color: hsl(240, 100%, 80%);
+}
+
+#violet, #violet1, #violet2{
+    background-color: violet;
+}
+
+#violet:hover, #violet1:hover, #violet2:hover{
+    background-color: hsl(300, 76%, 62%);
+}
+
+#violet:active, #violet1:active, #violet2:active{
+    background-color: hsl(300, 76%, 82%);
+}
+
+#gray, #gray1, #gray2{
+    background-color: rgb(88, 88, 88);
+}
+
+#gray:hover, #gray1:hover, #gray2:hover{
+    background-color: hsl(0, 0%, 55%);
+}
+
+#gray:active, #gray1:active, #gray2:active{
+    background-color: hsl(0, 0%, 65%);
+}
+
+#white, #white1, #white2{
+    background-color: white;
+    border: 1px solid black;
+}
+
+#white:hover, #white1:hover, #white2:hover{
+    background-color: hsl(0, 0%, 80%);
+}
+
+#white:active, #white1:active, #white2:active{
+    background-color: hsl(0, 0%, 60%);
+}
+
+#gold{
+    background-color: gold;
+}
+
+#gold:hover{
+    background-color: hsl(51, 100%, 60%);
+}
+
+#gold:active{
+    background-color: hsl(51, 100%, 80%);
+}
+
+#silver{
+    background-color: silver;
+    transition-duration: 0.5s;
+}
+
+#silver:hover{
+    background-color: hsl(0, 0%, 55%);
+}
+
+#silver:active{
+    background-color: hsl(0, 0%, 85%);
+}
+
+#answer{
+    font-size: 18px;
+}
+
+#answer:hover{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+#answer:active{
+    color: rgb(51, 255, 0);
+    background-color: black;
+}
+
+#tolerance{
+    margin-top: 30px;
+}

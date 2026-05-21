@@ -1,0 +1,17 @@
+# IDE and Editor files
+.vscode/
+*.swp
+*.swo
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Live Server / Development artifacts
+.history/
+*.log
+.live-server-data/
+
+# Temporary files
+tmp/
+dist/

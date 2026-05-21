@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Resistance Calculator</title>
+    </head>
+    <body>
+        <section>
+            <div id="topic_container">
+                <h1>Resistance Calculator</h1>
+                <input id="resistor_calc" type="text" readonly>
+            </div>
+            <div id="calculation_container">
+                
+                <div id="displayer">
+                    <div class="display_container">
+                        <h4 class="label_h4">Value</h4>
+                        <h4 id="first_value"></h4>
+                    </div>
+                    <div class="display_container">
+                        <h4 class="label_h4">+Tolerance</h4>
+                        <h4 id="second_value"></h4>
+                    </div>
+                    <div class="display_container">
+                        <h4 class="label_h4">-Tolerance</h4>
+                        <h4 id="third_value"></h4>
+                    </div>
+                </div>
+                <div id="colors">
+                    <div id="first_div">
+                        <h4>FIRST COLOR</h4>
+                        <button id="black" onclick="appendfunction('0col1')">BLACK</button><br>
+                        <button id="brown" onclick="appendfunction('1col1')">BROWN</button><br>
+                        <button id="red" onclick="appendfunction('2col1')">RED</button><br>
+                        <button id="orange" onclick="appendfunction('3col1')">ORANGE</button><br>
+                        <button id="yellow" onclick="appendfunction('4col1')">YELLOW</button><br>
+                        <button id="green" onclick="appendfunction('5col1')">GREEN</button><br>
+                        <button id="blue" onclick="appendfunction('6col1')">BLUE</button><br>
+                        <button id="violet"  onclick="appendfunction('7col1')">VIOLET</button><br>
+                        <button id="gray" onclick="appendfunction('8col1')">GRAY</button><br>
+                        <button id="white" onclick="appendfunction('9col1')">WHITE</button>
+                    </div>
+                    <div id="second_div">
+                        <h4>SECOND COLOR</h4>
+                        <button id="black1" onclick="appendfunction('0col2')">BLACK</button><br>
+                        <button id="brown1" onclick="appendfunction('1col2')">BROWN</button><br>
+                        <button id="red1" onclick="appendfunction('2col2')">RED</button><br>
+                        <button id="orange1" onclick="appendfunction('3col2')">ORANGE</button><br>
+                        <button id="yellow1" onclick="appendfunction('4col2')">YELLOW</button><br>
+                        <button id="green1" onclick="appendfunction('5col2')">GREEN</button><br>
+                        <button id="blue1" onclick="appendfunction('6col2')">BLUE</button><br>
+                        <button id="violet1"  onclick="appendfunction('7col2')">VIOLET</button><br>
+                        <button id="gray1" onclick="appendfunction('8col2')">GRAY</button><br>
+                        <button id="white1" onclick="appendfunction('9col2')">WHITE</button>
+                    </div>
+                    <div id="third_div">
+                        <h4>THIRD COLOR</h4>
+                        <button id="black2" onclick="appendfunction('0col3')">BLACK</button><br>
+                        <button id="brown2" onclick="appendfunction('1col3')">BROWN</button><br>
+                        <button id="red2" onclick="appendfunction('2col3')">RED</button><br>
+                        <button id="orange2" onclick="appendfunction('3col3')">ORANGE</button><br>
+                        <button id="yellow2" onclick="appendfunction('4col3')">YELLOW</button><br>
+                        <button id="green2" onclick="appendfunction('5col3')">GREEN</button><br>
+                        <button id="blue2" onclick="appendfunction('6col3')">BLUE</button><br>
+                        <button id="violet2"  onclick="appendfunction('7col3')">VIOLET</button><br>
+                        <button id="gray2" onclick="appendfunction('8col3')">GRAY</button><br>
+                        <button id="white2" onclick="appendfunction('9col3')">WHITE</button>
+                    </div>
+                </div>
+                <div id="tolerance">
+                    <div id="forth_div">
+                        <h4>TOLERANCE COLOR</h4>
+                        <button id="brown3" onclick="appendfunction('0.01col4')">BROWN</button><br>
+                        <button id="red3" onclick="appendfunction('0.02col4')">RED</button><br>
+                        <button id="gold" onclick="appendfunction('0.05col4')">GOLD</button><br>
+                        <button id="silver" onclick="appendfunction('0.1col4')">SILVER</button><br>
+                    </div>
+                </div>
+                <button id="answer" onclick="calculate()">Calculate</button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
