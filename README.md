@@ -8,7 +8,7 @@ A clean, functional resistance calculator built using standard web technologies.
 
 * Visual Studio Code
 
-***Live Server** extension for VS Code
+***Live Server*** extension for VS Code
 
 ### Installation and Setup
 
