@@ -27,11 +27,13 @@ function appendfunction(input){
         }
 
         if(colNum === 'col3' && num_value === 2){
-            num = eval(resistor_calc.value + "*(10** " + input.slice(0,-4) + ")");
-            resistor_calc.value = resistor_calc.value + "*(10**" + input.slice(0,-4) + ")";
+            num = eval(resistor_calc.value + "*(10**" + input.slice(0,-4) + ")");
+            resistor_calc.value = resistor_calc.value + "x(10^" + input.slice(0,-4) + ")";
             num_value++;
         }else if(colNum === 'col3' && num_value === 3){
-            num = eval(resistor_calc.value.slice(0,-2) + input.slice(0,-4) + ")");
+            var str = resistor_calc.value.slice(0,-2).replaceAll("x","*");
+            str = str.replaceAll("^","**");
+            num = eval(str + input.slice(0,-4) + ")");
             resistor_calc.value = resistor_calc.value.slice(0,-2) + input.slice(0,-4) + ")";
             num_value = 3;
         }
@@ -39,14 +41,14 @@ function appendfunction(input){
         if(colNum === 'col4' && num_value === 3){
             prev_val = input.slice(0,-4);
             num2 = num * Number(input.slice(0,-4))
-            resistor_calc.value = resistor_calc.value + "*" + input.slice(0,-4);
+            resistor_calc.value = resistor_calc.value + "(" + input.slice(0,-4) +")";
             num_value++;
         }
     }else{
         console.log(prev_val);
         prev_val = input.slice(0,-4);
         num2 = num * Number(input.slice(0,-4));
-        resistor_calc.value = resistor_calc.value.slice(0,-(prev_val.length +1)) + "*" + input.slice(0,-4);
+        resistor_calc.value = resistor_calc.value.slice(0,-(prev_val.length +2)) + "(" + input.slice(0,-4) + ")";
         num_value = 4;
     }
     
